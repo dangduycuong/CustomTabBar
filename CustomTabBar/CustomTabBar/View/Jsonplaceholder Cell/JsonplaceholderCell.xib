@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="JsonplaceholderCell" customModule="CustomTabBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t4-rH-BEx">
+                        <rect key="frame" x="125.5" y="8" width="186.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-ex-PsV">
+                        <rect key="frame" x="8" y="8" width="101.5" height="101.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Sog-ex-PsV" secondAttribute="height" multiplier="1:1" id="u9Z-IL-ihQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7t4-rH-BEx" secondAttribute="trailing" constant="8" id="3Rx-Op-fME"/>
+                    <constraint firstItem="Sog-ex-PsV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7uJ-Zq-gbi"/>
+                    <constraint firstItem="Sog-ex-PsV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="S3h-qA-6k8"/>
+                    <constraint firstItem="7t4-rH-BEx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="iDQ-gt-SZj"/>
+                    <constraint firstItem="7t4-rH-BEx" firstAttribute="leading" secondItem="Sog-ex-PsV" secondAttribute="trailing" constant="16" id="tJY-38-tm0"/>
+                    <constraint firstAttribute="bottom" secondItem="Sog-ex-PsV" secondAttribute="bottom" constant="8" id="wGy-5t-fXv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="thumbnailUrlImageView" destination="Sog-ex-PsV" id="TOX-TA-LOx"/>
+                <outlet property="titleLabel" destination="7t4-rH-BEx" id="GJe-2x-gYy"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="180.80959520239881"/>
+        </tableViewCell>
+    </objects>
+</document>
